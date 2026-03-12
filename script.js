@@ -1,51 +1,55 @@
 let recipes = [];
 
+/* Load recipes */
+
 fetch("recipes.json")
-.then(res => res.json())
-.then(data => {
+    .then(response => response.json())
+    .then(data => {
+        recipes = data;
+        displayDishes(recipes);
+    });
 
-recipes = data;
-displayDishes(recipes);
 
-});
+/* Display dishes */
 
-function displayDishes(list){
+function displayDishes(list) {
 
-const dishList = document.getElementById("dishList");
-const count = document.getElementById("recipeCount");
+    const dishList = document.getElementById("dishList");
+    const count = document.getElementById("recipeCount");
 
-dishList.innerHTML = "";
+    dishList.innerHTML = "";
 
-count.textContent = list.length + " recipes found";
+    count.textContent = list.length + " recipes found";
 
-if(list.length === 0){
+    if (list.length === 0) {
+        dishList.innerHTML = "<li>No recipes found</li>";
+        return;
+    }
 
-dishList.innerHTML = "<li>No recipes found</li>";
-return;
+    list.forEach(recipe => {
+
+        const li = document.createElement("li");
+
+        li.textContent = recipe.title;
+
+        li.addEventListener("click", () => {
+            showRecipe(recipe);
+        });
+
+        dishList.appendChild(li);
+
+    });
 
 }
 
-list.forEach(recipe => {
 
-const li = document.createElement("li");
+/* Show recipe */
 
-li.textContent = recipe.title;
+function showRecipe(recipe) {
 
-li.addEventListener("click", () => {
-showRecipe(recipe);
-});
+    const panel = document.getElementById("recipeDetails");
 
-dishList.appendChild(li);
-
-});
-
-}
-
-function showRecipe(recipe){
-
-const panel = document.getElementById("recipeDetails");
-
-panel.innerHTML = `
+    panel.innerHTML = `
 
 <h2>${recipe.title}</h2>
 
@@ -67,45 +71,56 @@ View Instagram Post
 
 }
 
-document.getElementById("search").addEventListener("input", function(){
 
-const value = this.value.toLowerCase();
+/* Search */
 
-const filtered = recipes.filter(recipe =>
-recipe.title.toLowerCase().includes(value)
-);
+document.getElementById("search").addEventListener("input", function () {
 
-displayDishes(filtered);
+    const value = this.value.trim().toLowerCase();
+
+    if (value === "") {
+        displayDishes(recipes);
+        return;
+    }
+
+    const filtered = recipes.filter(recipe =>
+        recipe.title.toLowerCase().includes(value)
+    );
+
+    displayDishes(filtered);
 
 });
+
+
+/* Category filters */
 
 document.querySelectorAll(".filter").forEach(button => {
 
-button.addEventListener("click", () => {
+    button.addEventListener("click", () => {
 
-const category = button.dataset.category;
+        const category = button.dataset.category;
 
-if(category === "All"){
-displayDishes(recipes);
-}
-else{
+        if (category === "All") {
+            displayDishes(recipes);
+        }
+        else {
+            const filtered = recipes.filter(recipe =>
+                recipe.category === category
+            );
+            displayDishes(filtered);
+        }
 
-const filtered = recipes.filter(recipe =>
-recipe.category === category
-);
-
-displayDishes(filtered);
-
-}
-
-});
+    });
 
 });
+
+
+/* Random recipe */
 
 document.getElementById("randomRecipe").addEventListener("click", () => {
 
-const randomIndex = Math.floor(Math.random()*recipes.length);
+    const randomIndex = Math.floor(Math.random() * recipes.length);
 
-showRecipe(recipes[randomIndex]);
+    showRecipe(recipes[randomIndex]);
 
 });
