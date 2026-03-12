@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keurig Recipe Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Keurig Recipe Hub</h1>
+        <p>Recipes from the Keurig Cooking Society</p>
+    </header>
+
+    <section class="controls">
+
+        <div class="recipe-day">
+            <h3>⭐ Recipe of the Day</h3>
+            <button id="randomRecipe">Show Random Recipe</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter" data-category="All">All</button>
+            <button class="filter" data-category="Dessert">Desserts</button>
+            <button class="filter" data-category="Beverage">Beverages</button>
+            <button class="filter" data-category="Main">Main Course</button>
+            <button class="filter" data-category="Snack">Snacks</button>
+        </div>
+
+    </section>
+
+    <div class="container">
+
+        <div class="left-panel">
+
+            <input type="text" id="search" placeholder="Search dishes...">
+
+            <p id="recipeCount"></p>
+
+            <ul id="dishList"></ul>
+
+        </div>
+
+        <div class="right-panel" id="recipeDetails">
+
+            <h2>Select a dish</h2>
+            <p>Click on a dish to view its recipe and Instagram post.</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

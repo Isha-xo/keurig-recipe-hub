@@ -1,0 +1,158 @@
+:root{
+--primary:#00AEEF;
+--accent:#0077B6;
+--light:#E6F7FF;
+--white:#ffffff;
+}
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:var(--light);
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* CONTROLS */
+
+.controls{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:20px;
+}
+
+/* RANDOM BUTTON */
+
+.recipe-day button{
+background:var(--accent);
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.recipe-day button:hover{
+opacity:0.9;
+}
+
+/* FILTER BUTTONS */
+
+.filters button{
+margin:5px;
+padding:8px 12px;
+border:none;
+background:var(--primary);
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.filters button:hover{
+background:var(--accent);
+}
+
+/* MAIN CONTAINER */
+
+.container{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:20px;
+padding:20px;
+height:70vh;
+}
+
+/* LEFT PANEL */
+
+.left-panel{
+background:white;
+border-radius:12px;
+padding:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+overflow-y:auto;
+}
+
+#search{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+/* DISH LIST */
+
+#dishList{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+#dishList li{
+padding:12px;
+border-bottom:1px solid #eee;
+cursor:pointer;
+transition:0.2s;
+}
+
+#dishList li:hover{
+background:var(--light);
+}
+
+/* RIGHT PANEL */
+
+.right-panel{
+background:white;
+border-radius:12px;
+padding:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+overflow-y:auto;
+}
+
+.right-panel ul{
+padding-left:20px;
+}
+
+.right-panel ol{
+padding-left:20px;
+}
+
+/* INSTAGRAM BUTTON */
+
+.instagram{
+display:inline-block;
+margin-top:15px;
+padding:10px 14px;
+background:var(--primary);
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.instagram:hover{
+background:var(--accent);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+height:auto;
+}
+
+}

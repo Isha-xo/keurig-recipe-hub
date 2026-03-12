@@ -1,0 +1,199 @@
+[
+{
+"id":1,
+"title":"Shahi Tukra",
+"category":"Dessert",
+"ingredients":["Bread","Milk","Sugar","Saffron"],
+"instructions":["Fry bread slices","Prepare rabri","Serve chilled"],
+"instagram_link":"https://www.instagram.com/p/DQD_hdOE2pu/"
+},
+
+{
+"id":2,
+"title":"Chhena Poda",
+"category":"Dessert",
+"ingredients":["Paneer","Sugar","Cardamom"],
+"instructions":["Prepare paneer mixture","Bake until caramelized"],
+"instagram_link":"https://www.instagram.com/p/DITu6rAzKKa/"
+},
+
+{
+"id":3,
+"title":"Mal Pua",
+"category":"Dessert",
+"ingredients":["Flour","Milk","Sugar"],
+"instructions":["Prepare batter","Deep fry","Dip in syrup"],
+"instagram_link":"https://www.instagram.com/reel/DHN3gcIzkUe/"
+},
+
+{
+"id":4,
+"title":"Paisum Kheer",
+"category":"Dessert",
+"ingredients":["Rice","Milk","Sugar"],
+"instructions":["Boil milk","Add rice","Cook until thick"],
+"instagram_link":"https://www.instagram.com/reel/DN5S3t6gRho/"
+},
+
+{
+"id":5,
+"title":"Papadi Chat",
+"category":"Snack",
+"ingredients":["Papadi","Yogurt","Chutney"],
+"instructions":["Assemble papadi","Add toppings"],
+"instagram_link":"https://www.instagram.com/reel/DShBsDqE_7S/"
+},
+
+{
+"id":6,
+"title":"Jhal Muri",
+"category":"Snack",
+"ingredients":["Puffed rice","Mustard oil","Onion","Spices"],
+"instructions":["Mix all ingredients","Serve immediately"],
+"instagram_link":"https://www.instagram.com/reel/C-ivIyNAd79/"
+},
+
+{
+"id":7,
+"title":"Heart Shaped Chocolates",
+"category":"Dessert",
+"ingredients":["Chocolate","Cream"],
+"instructions":["Melt chocolate","Pour into mold","Cool until set"],
+"instagram_link":"https://www.instagram.com/p/C9IODDfSTS3/"
+},
+
+{
+"id":8,
+"title":"Chocolate Chip Cookies",
+"category":"Dessert",
+"ingredients":["Flour","Chocolate chips","Butter"],
+"instructions":["Prepare cookie dough","Bake until golden"],
+"instagram_link":"https://www.instagram.com/reel/C8JzyqPSZJ9/"
+},
+
+{
+"id":9,
+"title":"Litti Chokha",
+"category":"Main",
+"ingredients":["Wheat flour","Sattu","Eggplant"],
+"instructions":["Prepare litti dough","Cook chokha","Serve together"],
+"instagram_link":"https://www.instagram.com/p/C76ONmLSeyP/"
+},
+
+{
+"id":10,
+"title":"Veg Khow Suey",
+"category":"Main",
+"ingredients":["Noodles","Vegetables","Coconut milk"],
+"instructions":["Prepare broth","Add noodles","Serve hot"],
+"instagram_link":"https://www.instagram.com/p/C5kmHCGx4KY/"
+},
+
+{
+"id":11,
+"title":"Chocolate Cake Made With Cookies",
+"category":"Dessert",
+"ingredients":["Cookies","Milk","Baking powder"],
+"instructions":["Blend cookies","Bake cake"],
+"instagram_link":"https://www.instagram.com/p/C5aONDcxFC-/"
+},
+
+{
+"id":12,
+"title":"Thandai",
+"category":"Beverage",
+"ingredients":["Milk","Nuts","Spices"],
+"instructions":["Blend ingredients","Serve chilled"],
+"instagram_link":"https://www.instagram.com/p/C4-6alUxTDm/"
+},
+
+{
+"id":13,
+"title":"Mango Pudding",
+"category":"Dessert",
+"ingredients":["Mango","Cream","Sugar"],
+"instructions":["Blend mango","Chill pudding"],
+"instagram_link":"https://www.instagram.com/p/Cu1xJBdRjaO/"
+},
+
+{
+"id":14,
+"title":"Mango Phirni",
+"category":"Dessert",
+"ingredients":["Rice","Milk","Mango"],
+"instructions":["Cook rice paste","Add mango puree"],
+"instagram_link":"https://www.instagram.com/p/Cuj5UHDxfyN/"
+},
+
+{
+"id":15,
+"title":"Cold Pasta and Salad",
+"category":"Main",
+"ingredients":["Pasta","Vegetables","Dressing"],
+"instructions":["Boil pasta","Mix vegetables","Add dressing"],
+"instagram_link":"https://www.instagram.com/p/CucLjNuxA1O/"
+},
+
+{
+"id":16,
+"title":"Lassi",
+"category":"Beverage",
+"ingredients":["Yogurt","Sugar","Cardamom"],
+"instructions":["Blend ingredients","Serve chilled"],
+"instagram_link":"https://www.instagram.com/p/CuWbZ_yxksK/"
+},
+
+{
+"id":17,
+"title":"Tomato Soup with Cheese Garlic Croutons",
+"category":"Snack",
+"ingredients":["Tomatoes","Garlic bread","Cheese"],
+"instructions":["Prepare tomato soup","Add croutons","Serve hot"],
+"instagram_link":"https://www.instagram.com/p/CmjjRWJvnuE/"
+},
+
+{
+"id":18,
+"title":"Caramel Custard",
+"category":"Dessert",
+"ingredients":["Milk","Sugar","Eggs"],
+"instructions":["Prepare caramel","Bake custard"],
+"instagram_link":"https://www.instagram.com/p/CmjUEbdraFX/"
+},
+
+{
+"id":19,
+"title":"Tandoori Chicken",
+"category":"Main",
+"ingredients":["Chicken","Yogurt","Spices"],
+"instructions":["Marinate chicken","Grill or roast"],
+"instagram_link":"https://www.instagram.com/p/CmhHO1IP58E/"
+},
+
+{
+"id":20,
+"title":"Lasagna",
+"category":"Main",
+"ingredients":["Lasagna sheets","Cheese","Tomato sauce"],
+"instructions":["Layer ingredients","Bake"],
+"instagram_link":"https://www.instagram.com/p/CmgsrIOLE3w/"
+},
+
+{
+"id":21,
+"title":"Roasted Chicken",
+"category":"Main",
+"ingredients":["Chicken","Herbs","Butter"],
+"instructions":["Season chicken","Roast until cooked"],
+"instagram_link":"https://www.instagram.com/p/CmbrdGJPaJC/"
+},
+
+{
+"id":22,
+"title":"Christmas Theme Brownies",
+"category":"Dessert",
+"ingredients":["Chocolate","Flour","Butter"],
+"instructions":["Prepare batter","Bake brownies"],
+"instagram_link":"https://www.instagram.com/p/Cmbq47arkXU/"
+}
+]
